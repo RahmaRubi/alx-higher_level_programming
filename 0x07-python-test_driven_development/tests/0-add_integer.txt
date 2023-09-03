@@ -1,4 +1,4 @@
->>> from 0-add_integer import add_integer
+add_integer = _import_('0-add_integer').add_integer
 # two positive intger
 >>> add_integer(1, 2)
 3
