@@ -1,16 +1,17 @@
 #!/usr/bin/python3
 """ class rectangle"""
 
+
 class Rectangle:
-    """ intialization"""
-    def __init__(self, width = 0, height = 0):
+    """intialization"""
+    def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
-    
+
     @property
     def width(self):
         return(self.__width)
-        
+
     @widthsetter
     def width(self, value):
         if value not isinstance(value, int):
@@ -30,4 +31,3 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
