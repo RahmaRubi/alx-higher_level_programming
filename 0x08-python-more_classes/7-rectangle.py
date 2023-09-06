@@ -54,18 +54,12 @@ class Rectangle:
         rectangle = ""
         if self.width == 0 or self.height == 0:
             return(rectangle)
-        pattern = self.print_symbol * self.width
+        pattern = str(self.print_symbol) * self.width
         for i in range(self.height):
             if i == self.height - 1:
-                if not isinstance(self.print_symbol, list):
-                    rectangle += pattern
-                else:
-                    rectangle = ' '.join(pattern)
+                rectangle += pattern
                 break
-            if not isinstance(self.print_symbol, list):
-                    rectangle += pattern + "\n"
-            else:
-                    rectangle = ' '.join(pattern) + "\n"
+            rectangle += pattern + "\n"
         return(rectangle)
 
     def __repr__(self):
