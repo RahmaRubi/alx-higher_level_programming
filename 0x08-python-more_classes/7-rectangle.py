@@ -54,7 +54,7 @@ class Rectangle:
         rectangle = ""
         if self.width == 0 or self.height == 0:
             return(rectangle)
-        pattern = "#" * self.width
+        pattern = self.print_symbol * self.width
         for i in range(self.height):
             if i == self.height - 1:
                 rectangle += pattern
