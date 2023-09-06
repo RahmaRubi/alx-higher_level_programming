@@ -52,7 +52,8 @@ class Rectangle:
             return(rectangle)
         pattern = "#" * self.width
         for i in range(self.height):
-            rectangle += pattern + "\n"
             if i == self.height - 1:
                 rectangle += pattern
+                break
+            rectangle += pattern + "\n"
         return(rectangle)
