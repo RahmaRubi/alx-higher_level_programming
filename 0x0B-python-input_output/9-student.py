@@ -4,8 +4,10 @@
 
 class Student:
     """ student class """
-
+    
     def  __init__(self, first_name, last_name, age):
+        """ init func """
+
         self.first_name = name
         self.last_name = last_name
         self.age = age
