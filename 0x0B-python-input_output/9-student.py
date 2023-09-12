@@ -4,8 +4,8 @@
 
 class Student:
     """ student class """
-    
-    def  __init__(self, first_name, last_name, age):
+
+    def __init__(self, first_name, last_name, age):
         """ init func """
 
         self.first_name = first_name
@@ -16,5 +16,3 @@ class Student:
         """defines function"""
 
         return self.__dict__
-
-
