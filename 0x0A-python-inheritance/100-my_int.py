@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 class MyInt(int):
     """ myint class """
     def __init__(self, value):

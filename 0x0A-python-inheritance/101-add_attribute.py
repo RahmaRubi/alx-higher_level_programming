@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def add_attribute(obj, attr, value):
     if hasattr(obj, '__dict__'):
         setattr(obj, attr, value)
