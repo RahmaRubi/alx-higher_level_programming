@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+""" my class """
 class MyInt(int):
-    """ myint class """
     def __init__(self, value):
         super().__init__()
 
