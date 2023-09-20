@@ -77,7 +77,7 @@ class Rectangle(Base):
         rect = ""
         symbol = "#"
         pattern = " " * self.__x + symbol * self.width
-        print("{}".format("\n" * self.__y))
+        print("{}".format("\n" * self.__y), end="")
         for j in range(self.__height):
             print(pattern)
 
