@@ -1,9 +1,13 @@
 #!/usr/bin/python3
+""" hash """
+
+
 class Base:
     """ base class """
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """ dunder method """
         if id is not None:
             self.id = id
         else:
