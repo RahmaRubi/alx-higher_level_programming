@@ -83,4 +83,4 @@ class Rectangle(Base):
     def __str__(self):
         """ a dunder function called implicitly when printing the object """
         return "[{}] ({}) {}/{} - {}/{}".format(
-        type(self), self.id, self.__x, self.__y, self.__width, self.__height)
+                "Rectangle", self.id, self.__x, self.__y, self.__width, self.__height)
