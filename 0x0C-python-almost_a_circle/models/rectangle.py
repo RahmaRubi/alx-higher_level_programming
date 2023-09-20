@@ -76,11 +76,12 @@ class Rectangle(Base):
         """ disply rectangle represented by # """
         rect = ""
         symbol = "#"
-        pattern = symbol * self.width
+        pattern = " " * self.__x + symbol * self.width
+        print("{}".format("\n" * self.__y))
         for j in range(self.__height):
             print(pattern)
 
     def __str__(self):
         """ a dunder function called implicitly when printing the object """
-        return "[Rectangle] ({}) {}/{} - {}/{}".format\
-        (self.id, self.__x, self.__y, self.__width, self.__height)
+        return "[Rectangle] ({}) {}/{} - {}/{}"\
+            .format(self.id, self.__x, self.__y, self.__width, self.__height)
