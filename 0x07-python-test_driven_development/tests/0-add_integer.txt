@@ -1,0 +1,36 @@
+#from 0x07-python-test_driven_development.0-add_integer import add_integer
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+
+simple level
+>>> add_integer(1, 2)
+3
+>>> add_integer(1, -2)
+-1
+>>> add_integer(1)
+99
+
+
+moderate for floats
+>>> add_integer(2.5, 2)
+4
+>>> add_integer(1.5)
+99
+>>> add_integer(1.5, 2.5)
+3
+
+hard level and errors
+>>> add_integer("hi", 2)
+Traceback (most recent call last):
+ ...
+TypeError: a must be an integer
+>>> add_integer(1, "hi")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+>>> add_integer(None, 2)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
