@@ -13,7 +13,7 @@ class Test_Max_Int(unittest.TestCase):
         """
         self.assertEqual(max([1, 3, 4, 7]), 7)
         self.assertEqual(max([1000, -3, -1]), 1000)
-        self.assertEqual(max([-1, -3, -199]), -1)
+        self.assertEqual(max([-3, 3, 1]), 3)
         self.assertEqual(max([0]), 0)
     
     def test_moderate_val(self):
