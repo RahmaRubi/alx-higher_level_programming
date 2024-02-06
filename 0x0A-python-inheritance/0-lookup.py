@@ -4,4 +4,4 @@
 
 def lookup(obj):
     """ functionn for dir returnning the att and meyhods of the object """
-    return([dir(obj)])
+    return(dir(obj))
