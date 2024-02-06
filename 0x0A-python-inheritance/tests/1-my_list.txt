@@ -1,5 +1,8 @@
 >>> my_list = __import__('1-my_list').MyList
-
+>>> print(len(__import__('1-my_list').__doc__) > 1)
+True
+>>> print(len(__import__('1-my_list').MyList.__doc__) > 1)
+True
 
 >>> listy = my_list([1, 2, 4, 3])
 >>> listy.print_sorted()
