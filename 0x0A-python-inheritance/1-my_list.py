@@ -2,7 +2,6 @@
 """ module has a class inherit from list class """
 
 
-
 class MyList(list):
     """
     class MyList that inherits from list
