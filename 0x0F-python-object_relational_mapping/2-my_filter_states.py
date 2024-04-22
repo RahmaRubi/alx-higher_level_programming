@@ -19,15 +19,16 @@ if __name__ == '__main__':
     cursor = connection.cursor()
 
     # Define SQL query with placeholder for state
-    query = "SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY states.id ASC".format(sys.argv[4])
+    query = "SELECT * FROM states WHERE name LIKE BINARY '{}'"
+    "ORDER BY states.id ASC".format(
+        sys.argv[4])
 
     # Execute SQL query
     cursor.execute(query)
 
-    # Fetch results
+    # Fetch
     rows = cursor.fetchall()
     for row in rows:
-         print(row)
+        print(row)
     cursor.close()
     connection.close()
-   
