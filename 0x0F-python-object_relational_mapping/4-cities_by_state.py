@@ -20,6 +20,6 @@ if __name__ == '__main__':
     if query_rows:
         for row in query_rows:
             if row:
-                    print(row)
+                print(row)
     cursor.close()
     connection.close()
