@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-a script that lists selected states
+a script that lists selected states with paramterized
+queres to prevent sql injection
 """
 import MySQLdb
 import sys
