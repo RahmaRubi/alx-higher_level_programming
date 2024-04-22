@@ -26,5 +26,8 @@ if __name__ == '__main__':
 
     # Fetch results
     rows = cursor.fetchall()
-
+    for row in rows:
+         print(row)
+    cursor.close()
+    connection.close()
    
