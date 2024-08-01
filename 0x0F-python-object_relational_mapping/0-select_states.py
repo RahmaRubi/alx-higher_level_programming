@@ -11,7 +11,7 @@ if __name__ == '__main__':
                 password=sys.argv[2],
                 database=sys.argv[3],
                 host="localhost",
-                port=330./6)
+                port=3306)
     cursor = connection.cursor()
     cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
     query_rows = cursor.fetchall()
